@@ -1,0 +1,15 @@
+* {
+    font-family: "Roboto", sans-serif;
+
+    margin: 0px;
+}
+
+h1 h2 {
+    font-family: "Shrikhand", serif;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 375px;
+    box-sizing: border-box;
+}
