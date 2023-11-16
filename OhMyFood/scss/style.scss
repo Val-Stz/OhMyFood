@@ -153,10 +153,12 @@ a {
         background-color: $color_1;
         margin: -10px;
     }
-}
-
-.material-symbols-outlined--purple {
-    color: $color_1;
+    .material-symbols-outlined {
+        color: var(--grey-tint-4, #7e7e7e);
+    }
+    .material-symbols-outlined--purple {
+        color: $color_1;
+    }
 }
 
 .restaurants {
@@ -164,25 +166,28 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     margin: 50px 0px 60px 0px;
-    padding: 0px 20px;
+    padding: 50px 20px;
     background: $background-color_2;
-    .restaurants__cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
 }
 
+.restaurants__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
 .card {
     display: flex;
     flex-direction: column;
     padding-bottom: 0px;
     align-items: flex-start;
-    gap: 5px;
+    width: 340px;
+    height: 250px;
     background-color: $background-color_1;
     border-radius: 20px;
     padding: 0px;
+    @include card-shadow();
     img {
         width: 100%;
         height: 231px;
@@ -190,9 +195,8 @@ a {
         border-top-right-radius: 20px;
         object-fit: cover;
     }
-    @include card-shadow();
     .card-title {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
     }
     .card-content {
@@ -200,10 +204,11 @@ a {
         height: auto;
         padding: 15px 15px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         box-sizing: border-box;
         flex-wrap: wrap;
+        gap: 5px;
     }
     .card-subtitle {
         font-size: 17px;
