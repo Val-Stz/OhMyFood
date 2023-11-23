@@ -1,14 +1,4 @@
-$font-family_1: "Roboto", sans-serif;
-$font-family_2: "Shrikhand", serif;
-$color_1: #9356dc;
-$color_2: #ff79da;
-$color_3: #99e2d0;
-$background-color_1: white;
-$background-color_2: #f6f6f6;
-
-@mixin card-shadow {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-}
+@import "./mixin.scss";
 
 * {
     font-family: $font-family_1;
@@ -27,17 +17,11 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 24px;
-}
-
 .header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 113px;
     gap: 3px;
     .header__location {
         display: flex;
@@ -57,8 +41,7 @@ a {
         align-items: center;
         width: 100%;
         height: 62px;
-        margin: auto;
-        background: $background-color_1;
+        background: $color_4;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
         img {
             object-fit: contain;
@@ -74,7 +57,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $background-color_2;
+    background: $background-color_1;
     text-align: center;
     gap: 30px;
     padding: 30px 20px 40px 20px;
@@ -95,7 +78,7 @@ a {
             linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
         );
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        color: var(--White, #fff);
+        color: $color_4;
         font-weight: 500;
     }
 }
@@ -115,12 +98,17 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: $background-color_1;
+    background: $color_4;
     margin: 30px 0px 30px 0px;
     gap: 20px;
     width: auto;
     padding: 0px 20px;
 }
+
+.fonctionnement__title {
+    @include section-title;
+}
+
 .fonctionnement__list {
     display: flex;
     flex-direction: column;
@@ -138,7 +126,7 @@ a {
     width: 100%;
     height: 72px;
     border-radius: 20px;
-    background: $background-color_2;
+    background: $background-color_1;
     @include card-shadow;
     gap: 20px;
     font-size: 16px;
@@ -152,38 +140,51 @@ a {
         border-radius: 50px;
         background-color: $color_1;
         margin: -10px;
+        color: $color_4;
     }
-}
-
-.material-symbols-outlined--purple {
-    color: $color_1;
+    .material-symbols-outlined {
+        color: var(--grey-tint-4, #7e7e7e);
+    }
+    .material-symbols-outlined--purple {
+        color: $color_1;
+    }
 }
 
 .restaurants {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 50px 0px 60px 0px;
-    padding: 0px 20px;
-    background: $background-color_2;
-    .restaurants__cards {
+    margin: 50px 0px 0px 0px;
+    padding: 50px 20px;
+    background: $background-color_1;
+}
+
+.restaurants__title {
+    @include section-title;
+}
+
+.restaurants__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 18px;
+    a {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex: 1;
         width: 100%;
     }
 }
-
 .card {
     display: flex;
     flex-direction: column;
     padding-bottom: 0px;
     align-items: flex-start;
-    gap: 5px;
-    background-color: $background-color_1;
+    width: 100%;
+    background-color: $color_4;
     border-radius: 20px;
     padding: 0px;
-    img {
+    .restaurant-image {
         width: 100%;
         height: 231px;
         border-top-left-radius: 20px;
@@ -192,7 +193,7 @@ a {
     }
     @include card-shadow();
     .card-title {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
     }
     .card-content {
@@ -200,13 +201,47 @@ a {
         height: auto;
         padding: 15px 15px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: flex-start;
         box-sizing: border-box;
         flex-wrap: wrap;
+        gap: 5px;
     }
     .card-subtitle {
         font-size: 17px;
         font-weight: 300;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #353535;
+    padding: 22px 25px;
+    gap: 16px;
+    color: $color_4;
+    .footer__title {
+        font-family: $font-family_2;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+    gap: 7px;
+    font-weight: 500;
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+        gap: 10px;
+        .material-symbols-outlined {
+            font-size: 16px;
+        }
     }
 }
