@@ -44,13 +44,23 @@
                 <section class="menu-container">
                     <div class="page__title">
                         <h1>À la française</h1>
-                        <div class="like"></div>
+                        <div class="like">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                            <div class="like__bar"></div>
+                        </div>
                     </div>
-                    <div class="menu">
+                    <form method="get" action="" class="menu">
                         <h2 class="menu__subtitle menu__subtitle__border">
                             ENTREES
                         </h2>
-                        <article class="card__menu">
+                        <input
+                            type="checkbox"
+                            id="entree1"
+                            class="card-checkbox"
+                        />
+                        <label for="entree1" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
                                     Tartare de poulpe acidulé
@@ -60,102 +70,152 @@
                                 </p>
                             </div>
                             <div class="card__menu__price">25€</div>
-                        </article>
-                        <article class="card__menu">
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="entree2"
+                            class="card-checkbox"
+                        />
+                        <label for="entree2" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Velouté de légumes d'antan
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Carotte, panais, topinambour
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">35€</div>
-                        </article>
-                        <article class="card__menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="entree3"
+                            class="card-checkbox"
+                        />
+                        <label for="entree3" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Soupe à l'oignon
+                                    Tartare de poulpe acidulé
                                 </h3>
-                                <p class="card__menu__subtitle">Revisitée</p>
+                                <p class="card__menu__subtitle">
+                                    Aux zestes d'orange
+                                </p>
                             </div>
-                            <div class="card__menu__price">20€</div>
-                        </article>
-                    </div>
-                    <div class="menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+
                         <h2 class="menu__subtitle menu__subtitle__border">
                             PLATS
                         </h2>
-                        <article class="card__menu">
+                        <input
+                            type="checkbox"
+                            id="plat1"
+                            class="card-checkbox"
+                        />
+                        <label for="plat1" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Coquilles Saint-Jacques
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Accompagnées d'une purée de panais
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">40€</div>
-                        </article>
-                        <article class="card__menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="plat2"
+                            class="card-checkbox"
+                        />
+                        <label for="plat2" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Magret de canard
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Et parmentier de pommes de terre
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">35€</div>
-                        </article>
-                        <article class="card__menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="plat3"
+                            class="card-checkbox"
+                        />
+                        <label for="plat3" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Pigeonneau d’Ille-et-Vilaine
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Sur son lit de gnocchis aux légumes
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">44€</div>
-                        </article>
-                    </div>
-                    <div class="menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+
                         <h2 class="menu__subtitle menu__subtitle__border">
                             DESSERTS
                         </h2>
-                        <article class="card__menu">
+                        <input
+                            type="checkbox"
+                            id="dessert1"
+                            class="card-checkbox"
+                        />
+                        <label for="dessert1" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Pétales de violettes glacés
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Et purée de noisettes
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">18€</div>
-                        </article>
-                        <article class="card__menu">
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="dessert2"
+                            class="card-checkbox"
+                        />
+                        <label for="dessert2" class="card__menu">
                             <div class="card__menu__content">
                                 <h3 class="card__menu__title">
-                                    Fondant au chocolat
-                                </h3>
-                                <p class="card__menu__subtitle">Revisité</p>
-                            </div>
-                            <div class="card__menu__price">22€</div>
-                        </article>
-                        <article class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Millefeuille croustillant
+                                    Tartare de poulpe acidulé
                                 </h3>
                                 <p class="card__menu__subtitle">
-                                    Myrtilles et pâte d’amande
+                                    Aux zestes d'orange
                                 </p>
                             </div>
-                            <div class="card__menu__price">23€</div>
-                        </article>
-                    </div>
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <input
+                            type="checkbox"
+                            id="dessert3"
+                            class="card-checkbox"
+                        />
+                        <label for="dessert3" class="card__menu">
+                            <div class="card__menu__content">
+                                <h3 class="card__menu__title">
+                                    Tartare de poulpe acidulé
+                                </h3>
+                                <p class="card__menu__subtitle">
+                                    Aux zestes d'orange
+                                </p>
+                            </div>
+                            <div class="card__menu__price">25€</div>
+                        </label>
+                        <div class="menu__btn">
+                            <input
+                                type="submit"
+                                value="Commander"
+                                class="btn__command"
+                                action=""
+                            />
+                        </div>
+                    </form>
                 </section>
             </main>
 
