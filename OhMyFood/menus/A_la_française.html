@@ -14,227 +14,189 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
         <link rel="stylesheet" href="../scss/style.css" />
         <link rel="stylesheet" href="../scss/menu.css" />
     </head>
     <body>
-        <div class="main-container">
-            <header class="header-container">
-                <div class="header__logo">
-                    <a href="../index.html" class="btn-go-back">
-                        <span class="material-symbols-outlined">
-                            arrow_back
-                        </span></a
-                    >
-                    <img
-                        src="../images/logo/ohmyfood.png"
-                        alt="Logo OhMyFood"
-                    />
-                </div>
-            </header>
+        <header class="header__container">
+            <div class="header__logo">
+                <a href="../index.html" class="btn-go-back">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span></a
+                >
+                <img src="../images/logo/ohmyfood.png" alt="Logo OhMyFood" />
+            </div>
+        </header>
 
-            <main>
-                <div class="restaurant__photo">
-                    <img
-                        src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="A la francaise"
-                    />
+        <main>
+            <div class="restaurant__photo">
+                <img
+                    src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="A la francaise"
+                />
+            </div>
+            <section class="menu-container">
+                <div class="loader">
+                    <div class="loader__circle"></div>
                 </div>
-                <section class="menu-container">
-                    <div class="page__title">
-                        <h1>À la française</h1>
-                        <div class="like">
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                            <div class="like__bar"></div>
+                <div class="page__title">
+                    <h1>À la française</h1>
+                    <button class="restaurant__like">
+                        <i
+                            class="fa-regular fa-heart fa-xl like__icon like__icon--regular"
+                        ></i>
+                        <i
+                            class="fa-solid fa-heart fa-xl like__icon like__icon--solid"
+                        ></i>
+                    </button>
+                </div>
+                <ul class="menu">
+                    <h2 class="menu__subtitle menu__subtitle__border">
+                        ENTREES
+                    </h2>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
                         </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+
+                    <h2 class="menu__subtitle menu__subtitle__border">PLATS</h2>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+
+                    <h2 class="menu__subtitle menu__subtitle__border">
+                        DESSERTS
+                    </h2>
+
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+
+                    <li class="card__menu">
+                        <div class="card__menu__content">
+                            <h3 class="card__menu__title">
+                                Tartare de poulpe acidulé
+                            </h3>
+                            <p class="card__menu__subtitle">
+                                Aux zestes d'orange
+                            </p>
+                        </div>
+                        <div class="card__menu__price">25€</div>
+                    </li>
+                    <div class="menu__btn">
+                        <input
+                            type="submit"
+                            value="Commander"
+                            class="btn__command"
+                            action=""
+                        />
                     </div>
-                    <form method="get" action="" class="menu">
-                        <h2 class="menu__subtitle menu__subtitle__border">
-                            ENTREES
-                        </h2>
-                        <input
-                            type="checkbox"
-                            id="entree1"
-                            class="card-checkbox"
-                        />
-                        <label for="entree1" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="entree2"
-                            class="card-checkbox"
-                        />
-                        <label for="entree2" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="entree3"
-                            class="card-checkbox"
-                        />
-                        <label for="entree3" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
+                </ul>
+            </section>
+        </main>
 
-                        <h2 class="menu__subtitle menu__subtitle__border">
-                            PLATS
-                        </h2>
-                        <input
-                            type="checkbox"
-                            id="plat1"
-                            class="card-checkbox"
-                        />
-                        <label for="plat1" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="plat2"
-                            class="card-checkbox"
-                        />
-                        <label for="plat2" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="plat3"
-                            class="card-checkbox"
-                        />
-                        <label for="plat3" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-
-                        <h2 class="menu__subtitle menu__subtitle__border">
-                            DESSERTS
-                        </h2>
-                        <input
-                            type="checkbox"
-                            id="dessert1"
-                            class="card-checkbox"
-                        />
-                        <label for="dessert1" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="dessert2"
-                            class="card-checkbox"
-                        />
-                        <label for="dessert2" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <input
-                            type="checkbox"
-                            id="dessert3"
-                            class="card-checkbox"
-                        />
-                        <label for="dessert3" class="card__menu">
-                            <div class="card__menu__content">
-                                <h3 class="card__menu__title">
-                                    Tartare de poulpe acidulé
-                                </h3>
-                                <p class="card__menu__subtitle">
-                                    Aux zestes d'orange
-                                </p>
-                            </div>
-                            <div class="card__menu__price">25€</div>
-                        </label>
-                        <div class="menu__btn">
-                            <input
-                                type="submit"
-                                value="Commander"
-                                class="btn__command"
-                                action=""
-                            />
-                        </div>
-                    </form>
-                </section>
-            </main>
-
-            <footer class="footer__container">
-                <h3 class="footer__title">OhMyFood</h3>
-                <div class="footer__list">
-                    <a href="#">
-                        <i class="material-symbols-outlined"> restaurant </i
-                        >Proposer un restaurant</a
-                    >
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            handshake </span
-                        >Devenir partenaire</a
-                    >
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Contact</a>
-                </div>
-            </footer>
-        </div>
+        <footer class="footer__container">
+            <h3 class="footer__title">OhMyFood</h3>
+            <div class="footer__list">
+                <a href="#">
+                    <i class="material-symbols-outlined"> restaurant </i
+                    >Proposer un restaurant</a
+                >
+                <a href="#">
+                    <span class="material-symbols-outlined"> handshake </span
+                    >Devenir partenaire</a
+                >
+                <a href="#">Mentions légales</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
     </body>
 </html>
