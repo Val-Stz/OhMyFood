@@ -44,6 +44,9 @@
         font-weight: 400;
         margin-left: 4px;
     }
+    .restaurant__like {
+        @include like;
+    }
     @media (min-width: 376px) {
         justify-content: center;
         gap: 25px;
@@ -55,6 +58,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 12px;
+    padding: 0px;
     &__subtitle {
         font-size: 16px;
         font-style: normal;
@@ -113,6 +117,27 @@
         align-items: flex-end;
         font-size: 15px;
         font-weight: 700;
+    }
+    .slide-card {
+        animation: slide-dishes 1s ease normal forwards;
+        .delay__1 {
+            animation-delay: 0.25s;
+        }
+        .delay__2 {
+            animation-delay: 0.5s;
+        }
+    }
+
+    @keyframes slide-dishes {
+        0% {
+            opacity: 0;
+            transform: translateX(20rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 

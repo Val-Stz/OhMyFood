@@ -45,6 +45,37 @@
   font-weight: 400;
   margin-left: 4px;
 }
+.page__title .restaurant__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+.page__title .restaurant__like:hover .fa-solid {
+  opacity: 1;
+  transition-duration: 100ms;
+}
+.page__title .restaurant__like:hover .fa-regular {
+  opacity: 0;
+}
+.page__title .restaurant__like i {
+  position: absolute;
+  font-size: 26px;
+}
+.page__title .restaurant__like .fa-solid {
+  font-size: 26px;
+  animation: 100ms ease-in;
+  opacity: 0;
+  transition-duration: 100ms;
+}
+.page__title .restaurant__like .fa-solid::before {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+}
 @media (min-width: 376px) {
   .page__title {
     justify-content: center;
@@ -57,6 +88,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 12px;
+  padding: 0px;
 }
 .menu__subtitle {
   font-size: 16px;
@@ -118,6 +150,25 @@
   align-items: flex-end;
   font-size: 15px;
   font-weight: 700;
+}
+.card__menu .slide-card {
+  animation: slide-dishes 1s ease normal forwards;
+}
+.card__menu .slide-card .delay__1 {
+  animation-delay: 0.25s;
+}
+.card__menu .slide-card .delay__2 {
+  animation-delay: 0.5s;
+}
+@keyframes slide-dishes {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .card-checkbox {

@@ -33,3 +33,42 @@ $background-color_1: #f6f6f6;
         ),
         linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
 }
+
+@mixin like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    &:hover {
+        .fa-solid {
+            opacity: 1;
+            transition-duration: 100ms;
+        }
+        .fa-regular {
+            opacity: 0;
+        }
+    }
+
+    i {
+        position: absolute;
+        font-size: 26px;
+    }
+    .fa-solid {
+        font-size: 26px;
+        animation: 100ms ease-in;
+        opacity: 0;
+        transition-duration: 100ms;
+        &::before {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(
+                201deg,
+                #9356dc -5.2%,
+                #ff79da 110.74%
+            );
+        }
+    }
+}
