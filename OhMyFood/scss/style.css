@@ -27,7 +27,7 @@ a {
   inset: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: disappear 1s ease 2s forwards;
+  animation: disappear 1s ease 1s forwards;
 }
 .loader__circle {
   display: block;
@@ -50,7 +50,7 @@ a {
 .loader__circle::before {
   inset: 10px;
   border-top-color: #9356dc;
-  animation: spin 4s linear infinite;
+  animation: spin 3s linear infinite;
 }
 .loader__circle::after {
   inset: 25px;
