@@ -27,7 +27,7 @@ a {
     inset: 0;
     z-index: 1;
     opacity: 0.8;
-    animation: disappear 1s ease 2s forwards;
+    animation: disappear 1s ease 1s forwards;
     &__circle {
         display: block;
         position: relative;
@@ -50,7 +50,7 @@ a {
         &::before {
             inset: 10px;
             border-top-color: $color_1;
-            animation: spin 4s linear infinite;
+            animation: spin 3s linear infinite;
         }
         &::after {
             inset: 25px;
