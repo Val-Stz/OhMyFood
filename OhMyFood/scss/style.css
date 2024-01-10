@@ -113,7 +113,7 @@ a {
   margin: auto;
 }
 
-.navtool {
+.site__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,12 +123,12 @@ a {
   gap: 30px;
   padding: 30px 20px 40px 20px;
 }
-.navtool p {
+.site__description p {
   color: var(--Grey, #353535);
   font-size: 18px;
   font-weight: 300;
 }
-.navtool__exploration {
+.site__description__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,7 @@ a {
   font-weight: 500;
 }
 
-.navtool__exploration:hover {
+.site__description__btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
@@ -274,7 +274,7 @@ a {
   position: relative;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.card .restaurant-image {
+.card .restaurant__image {
   width: 100%;
   height: 231px;
   border-top-left-radius: 20px;
@@ -282,11 +282,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card .card-title {
+.card .card__title {
   font-size: 18px;
   font-weight: 700;
 }
-.card .card-content {
+.card .card__content {
   width: 100%;
   height: auto;
   padding: 15px 15px;
@@ -331,7 +331,7 @@ a {
   color: transparent;
   background-image: linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
 }
-.card .card-subtitle {
+.card .card__subtitle {
   font-size: 17px;
   font-weight: 300;
 }

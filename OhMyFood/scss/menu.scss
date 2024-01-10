@@ -1,6 +1,6 @@
 @import "./mixin.scss";
 
-.btn-go-back {
+.btn__go__back {
     position: relative;
     left: 10px;
     .material-symbols-outlined {
@@ -18,7 +18,7 @@
     }
 }
 
-.menu-container {
+.menu__container {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -85,17 +85,25 @@
 .card__menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: $color_4;
     border-radius: 15px;
     padding: 15px;
-    gap: 5px;
+    gap: 25px;
+    position: relative;
     cursor: pointer;
+    overflow: hidden;
     @include card-shadow();
+    animation: Apparition 0.6s;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-fill-mode: both;
     &__content {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: calc(100% - 50px);
+        transition: 0.5s;
     }
     &__title {
         overflow: hidden;
@@ -118,31 +126,88 @@
         font-size: 15px;
         font-weight: 700;
     }
-    .slide-card {
-        animation: slide-dishes 1s ease normal forwards;
-        .delay__1 {
-            animation-delay: 0.25s;
-        }
-        .delay__2 {
-            animation-delay: 0.5s;
-        }
+    &__slide {
+        height: 100%;
+        width: 70px;
+        background-color: $color_3;
+        position: absolute;
+        right: -70px;
+        top: 0;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    @keyframes slide-dishes {
-        0% {
-            opacity: 0;
-            transform: translateX(20rem);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
+    &__check {
+        background-color: $color_4;
+        transition: 0.5s;
+        border-radius: 100%;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+            color: $color_3;
         }
     }
 }
 
-.card-checkbox {
-    display: none;
+.card__menu:hover > .card__menu__content {
+    width: calc(100% - 120px);
+}
+
+.card__menu:hover > .card__menu__slide {
+    right: 0px;
+}
+
+@keyframes Apparition {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+.delay-6 {
+    animation-delay: 0.6s;
+}
+
+.delay-7 {
+    animation-delay: 0.7s;
+}
+
+.delay-8 {
+    animation-delay: 0.8s;
+}
+
+.delay-9 {
+    animation-delay: 0.9s;
 }
 
 .btn__command {
@@ -157,5 +222,6 @@
     &:hover {
         @include btn__background--hover;
         @include card-shadow;
+        cursor: pointer;
     }
 }
