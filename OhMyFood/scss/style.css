@@ -310,10 +310,11 @@ a {
 }
 .card .card__like:hover .fa-solid {
   opacity: 1;
-  transition-duration: 100ms;
+  transition-duration: 500ms;
 }
 .card .card__like:hover .fa-regular {
   opacity: 0;
+  transition-duration: 500ms;
 }
 .card .card__like i {
   position: absolute;
@@ -321,9 +322,9 @@ a {
 }
 .card .card__like .fa-solid {
   font-size: 26px;
-  animation: 100ms ease-in;
+  animation: 500ms ease-in;
   opacity: 0;
-  transition-duration: 100ms;
+  transition-duration: 500ms;
 }
 .card .card__like .fa-solid::before {
   background-clip: text;
