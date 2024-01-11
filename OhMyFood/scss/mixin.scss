@@ -57,7 +57,7 @@ $background-color_1: #f6f6f6;
     }
     .fa-solid {
         font-size: 26px;
-        animation: 1000ms ease-in;
+        animation: 100ms ease-in;
         opacity: 0;
         transition-duration: 100ms;
         &::before {
