@@ -139,12 +139,12 @@ a {
         height: 50px;
         border-radius: 25px;
         @include btn__background;
+        transition: 500ms ease;
     }
 }
 .site__description__btn {
     &:hover {
         @include btn__background--hover;
-        @include card-shadow();
     }
 }
 

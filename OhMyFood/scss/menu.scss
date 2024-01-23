@@ -218,13 +218,13 @@
     justify-content: center;
     align-items: center;
     @include btn__background;
+    transition: 500ms ease;
     width: 186px;
     height: 50px;
     border-radius: 25px;
     border: none;
+    cursor: pointer;
     &:hover {
         @include btn__background--hover;
-        @include card-shadow;
-        cursor: pointer;
     }
 }
