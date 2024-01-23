@@ -12,7 +12,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .restaurant__photo img {
     max-height: 420px;
     -o-object-position: 50% 60%;
@@ -31,7 +31,7 @@
   top: -60px;
   margin-bottom: -60px;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .menu__container {
     margin: 0px 10%;
     margin-bottom: -60px;
@@ -81,7 +81,7 @@
   color: transparent;
   background-image: linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .page__title {
     justify-content: center;
     gap: 25px;
@@ -114,7 +114,7 @@
   justify-content: center;
   margin-top: 30px;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .menu {
     padding: 0px 10%;
   }

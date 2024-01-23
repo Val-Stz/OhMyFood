@@ -7,11 +7,11 @@
 
 body {
     width: 100%;
-    max-width: 375px;
+    max-width: 767px;
     padding: 0px;
     box-sizing: border-box;
-    @media (min-width: 376px) {
-        max-width: 1440px;
+    @media (min-width: 768px) {
+        max-width: 1920px;
         margin: auto;
     }
 }
@@ -157,7 +157,7 @@ a {
     gap: 20px;
     width: auto;
     padding: 0px 20px;
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         margin: 50px 0px 50px 0px;
         padding: 0% 10%;
     }
@@ -175,7 +175,7 @@ a {
     padding: 0px;
     gap: 20px;
     width: 100%;
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 36px;
@@ -211,7 +211,7 @@ a {
     .material-symbols-outlined--purple {
         color: $color_1;
     }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         flex: 1;
     }
 }
@@ -224,7 +224,7 @@ a {
     padding: 50px 20px;
     background: $background-color_1;
     gap: 20px;
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         padding: 30px 10%;
     }
 }
@@ -244,7 +244,7 @@ a {
         flex: 1;
         width: 100%;
     }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 100px;
@@ -324,7 +324,7 @@ a {
         font-size: 18px;
         font-weight: 400;
     }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         flex-direction: row-reverse;
         justify-content: flex-start;
         align-items: flex-end;
@@ -349,7 +349,7 @@ a {
             font-size: 16px;
         }
     }
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
         flex-direction: row;
         gap: 20px;
         flex-wrap: wrap;

@@ -5,13 +5,13 @@
 
 body {
   width: 100%;
-  max-width: 375px;
+  max-width: 767px;
   padding: 0px;
   box-sizing: border-box;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   body {
-    max-width: 1440px;
+    max-width: 1920px;
     margin: auto;
   }
 }
@@ -157,7 +157,7 @@ a {
   width: auto;
   padding: 0px 20px;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .fonctionnement {
     margin: 50px 0px 50px 0px;
     padding: 0% 10%;
@@ -178,7 +178,7 @@ a {
   gap: 20px;
   width: 100%;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .fonctionnement__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,7 +217,7 @@ a {
 .fonctionnement__card .material-symbols-outlined--purple {
   color: #9356dc;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .fonctionnement__card {
     flex: 1;
   }
@@ -232,7 +232,7 @@ a {
   background: #f6f6f6;
   gap: 20px;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .restaurants {
     padding: 30px 10%;
   }
@@ -255,7 +255,7 @@ a {
   flex: 1;
   width: 100%;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .restaurants__cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -367,7 +367,7 @@ a {
   font-size: 18px;
   font-weight: 400;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .footer__container {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -395,7 +395,7 @@ a {
 .footer__list a .material-symbols-outlined {
   font-size: 16px;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .footer__list {
     flex-direction: row;
     gap: 20px;
