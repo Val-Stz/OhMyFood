@@ -211,10 +211,11 @@ a {
   margin: -10px;
   color: white;
 }
-.fonctionnement__card .material-symbols-outlined {
+.fonctionnement__card .fa-solid {
   color: var(--grey-tint-4, #7e7e7e);
+  font-size: 20px;
 }
-.fonctionnement__card .material-symbols-outlined--purple {
+.fonctionnement__card .fa-store--purpple {
   color: #9356dc;
 }
 @media (min-width: 768px) {

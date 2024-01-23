@@ -205,10 +205,11 @@ a {
         margin: -10px;
         color: $color_4;
     }
-    .material-symbols-outlined {
+    .fa-solid {
         color: var(--grey-tint-4, #7e7e7e);
+        font-size: 20px;
     }
-    .material-symbols-outlined--purple {
+    .fa-store--purpple {
         color: $color_1;
     }
     @media (min-width: 768px) {
